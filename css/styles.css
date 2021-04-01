@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ececec;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Globales */
+
+.center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    margin-top: 5rem;
+}
+
+/* Header */
+
+.contenedor-header {
+    display: block;
+    justify-content: space-between;
+}
+
+@media(min-width:700px) {
+    .contenedor-header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.titulo-header {
+    margin-top: 0;
+    text-align: center;
+}
+
+.titulo-header h2 {
+    font-size: 1.6;
+    font-weight: 200;
+}
+
+@media(min-width: 700px) {
+    .titulo-header {
+        margin-left: 2rem;
+        margin-top: 1.7rem;
+    }
+    .titulo-header .logo {
+        margin-right: 2rem;
+        width: 15%;
+    }
+}
+
+.nav-header a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+@media(min-width:700px) {
+    .nav-header {
+        margin-top: 2.7rem;
+    }
+    .nav-header a {
+        display: inline;
+        margin-right: 8rem;
+    }
+}
+
+/* Main Titulo  */
+
+.titulo-main {
+    font-size: 2.8rem;
+}
+
+@media(min-width: 700px) {
+    .titulo-main {
+        margin-top: 10rem;
+    }
+}
+
+/* Main Form */
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+input {
+    height: 2.2rem;
+    margin-top: 2rem;
+}
+
+.button {
+    width: 18rem;
+    margin: 2rem auto;
+    height: 4rem;
+    font-size: 1.5rem;  
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #FFC300;
+    border-radius: 0.5rem;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #c89c0e;
+}
+
+/* Main Contenido */
+
+.container {
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#features {
+    margin-top: 30px;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+@media (max-width: 550px) {
+    #features .icon {
+        display: none;
+    }
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+    text-align: left;
+}
+
+@media (max-width: 550px) {
+    #features .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    #features {
+        margin-top: 0;
+    }
+}
+
+
+/* Video */
+.video-page{
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+@media(min-width: 700px){
+    .video-page{
+        max-width: 100rem;
+        margin: 5rem auto
+    }
+}
+
+/* Productos */
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product {
+    width: 80%;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+@media(min-width: 700px){
+    #pricing{
+        flex-direction: row;
+    }
+
+    .product{
+        margin: 2rem 2rem;
+    }
+}
+
+.product .level {
+    background-color: #ddd;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product .precio {
+    font-weight: 500;
+    font-size: 3rem;
+    padding: 1.8rem;
+}
+
+.product li {
+    padding: 0.7rem;
+}
+
+.product .btnProduct {
+    font-size: 1.8rem;
+    padding: 1rem;
+    width: 9rem;
+    margin: 1rem auto;
+    background-color: #FFC300;
+    border-radius: 0.4rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btnProduct:hover {
+    background-color: #c89c0e;
+}
+
+/* Footer */
+
+.nav-footer {
+    max-width: 98rem;
+    margin: 0 auto;
+    text-align: end;
+    background-color: #ddd;
+    padding: 2rem;
+}
+
+.nav-footer a {
+    display: inline;
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.nav-footer p {
+    margin-top: 2rem;
+}
